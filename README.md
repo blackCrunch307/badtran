@@ -132,3 +132,28 @@ The ```TAPE X OF Y CALLED Z``` statement declares a tape of length ```X``` (```X
  To do this, one simply declares a variable as usual, with an integer type, a name the same as that of the tape, and the suffix ```-HEAD```. It is usual to initialise it as being equal to 1, which is the __first element__ in the tape, __not__ zero. For example, ```I24-TAPE-NAME-HEAD IS 1``` declares a 24-bit tape pointer for the tape ```TAPE-NAME``` and initialises it to 1. <br/>
  The ```TAPE PUT X Y``` statement stores  the value of ```Y``` (a variable) to the tape ```X``` (a tape) at the element pointed to its tape head. After using this statement the __head automatically increments__, but can be set to anything like an ordinary variable. <br/>
 The ```TAPE GET X Y``` statment gets the value of the element of tape ```X``` pointed to in its head, and assigns its value to the variable ```Y```. After using this statement, the head automatically increments__, but can be set to anything like an ordinary variable.
+
+## Subroutines
+A programme that demonstrates a subroutine is as follows:
+```
+       PROGRAMME SUBROUTINE-DEMO
+C      THIS IS A DEMONSTRATION OF A SUBROUTINE
+C      THE NEXT LINE IS A LABEL
+10     TWIDDLE THUMBS
+
+C      NOW WE'VE COME BACK FROM THE SUBROUTINE, LET'S JUMP PAST IT TO THE END
+C      THE NEXT LINE IS A LABEL
+20     TWIDDLE THUMBS
+
+
+       COME FROM 10
+       S20-MESSAGE IS "HELLORLD FROM A SUBROUTINE!"
+       READ OUT S20-MESSAGE
+C      WE'VE DONW WHAT WE NEED TO, NOW LET'S GO BACK
+       RETURN
+	   
+       COME FROM 20
+       END PROGRAMME
+```
+The only new statement is the ```RETURN``` statement, which resumes execution at the line most recently came from in a ```COME FROM X``` statement. <br/>
+It is important to, after the main part of your programme is finished running, jump to the end, so your subroutines will not be accidently run!
