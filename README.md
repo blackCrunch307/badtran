@@ -15,6 +15,7 @@ The ```PROGRAMME X``` statement, where X stands for your chosen name, names and 
 The ```END PROGRAMME``` statement ends the most-recently-begun programme. <br/>
 There can only be one programme per source file. <br/>
 Upper case is mandatory, and the only allowed characters (outside strings) are alphanumerics, and punctuation. <br/>
+The suffix for source files is ```.bts``` for *__B__*AD*__T__*RAN *__S__*OURCE
 
 ## Output
 A programme using output is as follows:
