@@ -1,7 +1,9 @@
-# BADTRAN - a bad FORTRAN
+# BADTRAN - bad, but hopefully usable
 
 BADTRAN is a language with some aspects inspired by FORTRAN, but designed to be bad, while still being usable.
 At present there is no implementation of the language, as I (rchipp42) lack the skills to write one. If you would like to, you may write an implementation of BADTRAN, and for the first one, an interpreter in a portable compiled language would be nice.
+
+__Read this document carefully__ informantion can be in odd places, so read carefully and in full.
 
 ## A First Programme
 The most basic programme possible is as follows:
@@ -83,14 +85,19 @@ The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply me
 ```X .LT. Y``` - ```x < y``` <br/>
 ```X .GT. Y``` - ```x > y``` <br/>
 ```X .EQ. Y``` - ```x == y``` <br/>
- ### Logical
- ```X .AN. Y``` - ```x && y``` <br/>
- ```X .OR. Y``` - ```x || y``` <br/>
- ```.NT. X``` - ```! ( x )``` (where ```X``` is a simple condition)
- 
- ## Notes on Operators
- An expression may only contain __one__ operator. The Assignment operator ```X IS Y``` does __not__ count. <br/>
- A condition may only contain __three or fewer__ operators. There are three types of contitions, as listed below:  <br/>
- Simple condition - for example ```X .LT. Y``` <br/>
- Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
- Gated condition - for example ```X .GT. Y .OR. X .EQ. Y``` (equal to C ```x > y || x == y```
+### Logical
+```X .AN. Y``` - ```x && y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
+```X .OR. Y``` - ```x || y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
+```.NT. X``` - ```! ( x )``` (where ```X``` is a simple condition)
+
+## Notes on Operators
+An expression may only contain __one__ operator. The Assignment operator ```X IS Y``` does __not__ count. <br/>
+A condition may only contain __three or fewer__ operators. There are five types of contitions, as listed below:  <br/>
+Simple condition - for example ```X .LT. Y``` <br/>
+Simple equating condition - for example ````X TIMES Y .EQ. Z``
+Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
+Inverted simple equating condition - for example ```.NT. Y FROM X .EQ. Z``` (equal to C ```not(x - y == z)```
+Gated condition - for example ```X .GT. Y .OR. X .EQ. Y``` (equal to C ```x > y || x == y```
+
+## Tapes
+TBD
