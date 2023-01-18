@@ -156,4 +156,4 @@ C      WE'VE DONE WHAT WE NEED TO, NOW LET'S GO BACK
        END PROGRAMME
 ```
 The only new statement is the ```RETURN``` statement, which resumes execution at the line most recently came from in a ```COME FROM X``` statement. <br/>
-It is important to, after the main part of your programme is finished running, jump to the end, so your subroutines will not be accidently run!
+It is important to, after the main part of your programme is finished running, __jump to the end__, so your subroutines will __not be accidently run__!
