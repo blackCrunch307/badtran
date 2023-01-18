@@ -131,7 +131,7 @@ The ```TAPE X OF Y CALLED Z``` statement declares a tape of length ```X``` (```X
  To avoid situations where one has a tape so long that the head can overflow, the programmer must declare the head and give it a type. <br/>
  To do this, one simply declares a variable as usual, with an integer type, a name the same as that of the tape, and the suffix ```-HEAD```. It is usual to initialise it as being equal to 1, which is the __first element__ in the tape, __not__ zero. For example, ```I24-TAPE-NAME-HEAD IS 1``` declares a 24-bit tape pointer for the tape ```TAPE-NAME``` and initialises it to 1. <br/>
  The ```TAPE PUT X Y``` statement stores  the value of ```Y``` (a variable) to the tape ```X``` (a tape) at the element pointed to its tape head. After using this statement the __head automatically increments__, but can be set to anything like an ordinary variable. <br/>
-The ```TAPE GET X Y``` statment gets the value of the element of tape ```X``` pointed to in its head, and assigns its value to the variable ```Y```. After using this statement, the head automatically increments__, but can be set to anything like an ordinary variable.
+The ```TAPE GET X Y``` statment gets the value of the element of tape ```X``` pointed to in its head, and assigns its value to the variable ```Y```. After using this statement, the __head automatically increments__, but can be set to anything like an ordinary variable.
 
 ## Subroutines
 A programme that demonstrates a subroutine is as follows:
