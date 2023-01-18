@@ -72,7 +72,7 @@ The second through seventh columns are reserved for numerical labels. <br/>
 The ```COME FROM X``` statement resumes execution at its own location when execution has reached a line with the numerical label ```X```. <br/>
 The ```COME FROM X UNLESS Y``` statement is the same as the ```COME FROM X``` statement, except that it will only perform the jump __if__ the condition ```Y``` is __not__ true. <br/>
 The ```TWIDDLE THUMBS``` statement does absolutely nothing, and is useful for lines with numerical labels. <br/>
-The ```A .GT. B``` operator returns true if ```A``` is greater than ```B```. Both ```A``` and ```B``` can be expressions, literals, or variables. <br/>
+The ```A .GT. B``` operator returns true if ```A``` is greater than ```B```. Both ```A``` and ```B``` can be literals or variables, but __not__ expressions. <br/>
 The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply means "plus". It is used for addition. Apart from the difference in purpose, it behaves like the ```A .GT. B```  operator.
 
 ## Binary operators
