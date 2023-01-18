@@ -88,11 +88,11 @@ The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply me
 ### Logical
 ```X .AN. Y``` - ```x && y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
 ```X .OR. Y``` - ```x || y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
-```.NT. X``` - ```! ( x )``` (where ```X``` is a simple condition)
+```.NT. X``` - ```! ( x )``` (where ```X``` is a simple or simple equating condition [or their inverting counterparts])
 
 ## Notes on Operators
-An expression may only contain __one__ operator. The Assignment operator ```X IS Y``` does __not__ count. <br/>
-A condition may only be of one of the five types listed below:
+An expression may only contain __one__ operator - for example ```X AND Y``` <br/>
+A condition may only be of one of the five types listed below:  <br/>
 Simple condition - for example ```X .LT. Y``` <br/>
 Simple equating condition - for example ```X TIMES Y .EQ. Z``` <br/>
 Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
