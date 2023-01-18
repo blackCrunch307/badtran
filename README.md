@@ -71,3 +71,26 @@ The ```COME FROM X UNLESS Y``` statement is the same as the ```COME FROM X``` st
 The ```TWIDDLE THUMBS``` statement does absolutely nothing, and is useful for lines with numerical labels. <br/>
 The ```A .GT. B``` operator returns true if ```A``` is greater than ```B```. Both ```A``` and ```B``` can be expressions, literals, or variables. <br/>
 The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply means "plus". It is used for addition. Apart from the difference in purpose, it behaves like the ```A .GT. B```  operator.
+
+## Binary operators
+### Arithmetic
+```X AND Y``` - ```x + y``` <br/>
+```Y FROM X``` - ```x - y``` <br/>
+```X TIMES Y``` - ```x * y``` <br/>
+```Y INTO X``` - ```x / y``` <br/>
+```X .MD. Y``` - ```x % y``` <br/>
+### Comparison 
+```X .LT. Y``` - ```x < y``` <br/>
+```X .GT. Y``` - ```x > y``` <br/>
+```X .EQ. Y``` - ```x == y``` <br/>
+ ### Logical
+ ```X .AN. Y``` - ```x && y``` <br/>
+ ```X .OR. Y``` - ```x || y``` <br/>
+ ```.NT. X``` - ```! ( x )``` (where ```X``` is a simple condition)
+ 
+ ## Notes on Operators
+ An expression may only contain __one__ operator. The Assignment operator ```X IS Y``` does __not__ count. <br/>
+ A condition may only contain __three or fewer__ operators. There are three types of contitions, as listed below:  <br/>
+ Simple condition - for example ```X .LT. Y``` <br/>
+ Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
+ Gated condition - for example ```X .GT. Y .OR. X .EQ. Y``` (equal to C ```x > y || x == y```
