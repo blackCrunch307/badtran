@@ -68,7 +68,7 @@ C       THE NEXT LINE IS A LABEL
 For the first time, we now have stuff *before* the start of normal statements. <br/>
 Normal statements start in the eighth column. <br/>
 The first column is reserved for the comment marker ```C```. If ```C``` is found in the  first column, the rest of the line is ignored. This is useful for writing comments and remarks. Comments *ought* to start in the eighth column anyway. <br/>
-The second through seventh columns are reserved for numerical labels. <br/>
+The second through sixth columns are reserved for numerical labels. <br/>
 The ```COME FROM X``` statement resumes execution at its own location when execution has reached a line with the numerical label ```X```. <br/>
 The ```COME FROM X UNLESS Y``` statement is the same as the ```COME FROM X``` statement, except that it will only perform the jump __if__ the condition ```Y``` is __not__ true. <br/>
 The ```TWIDDLE THUMBS``` statement does absolutely nothing, and is useful for lines with numerical labels. <br/>
