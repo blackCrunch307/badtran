@@ -3,7 +3,7 @@
 BADTRAN is a language with some aspects inspired by FORTRAN, but designed to be bad, while still being usable.
 At present there is no implementation of the language, as I (rchipp42) lack the skills to write one. If you would like to, you may write an implementation of BADTRAN, and for the first one, an interpreter in a portable compiled language would be nice.
 
-__Read this document carefully__ informantion can be in odd places, so read carefully and in full.
+__Read this document carefully!__ Informantion can be in __odd places__, so read carefully and in full.
 
 ## A First Programme
 The most basic programme possible is as follows:
