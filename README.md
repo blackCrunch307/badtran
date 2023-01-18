@@ -88,7 +88,7 @@ The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply me
 ### Logical
 ```X .AN. Y``` - ```x && y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
 ```X .OR. Y``` - ```x || y``` (where ```X``` and ```Y``` are simple or simple equating conditions [or their inverting counterparts]) <br/>
-```.NT. X``` - ```! ( x )``` (where ```X``` is a simple or simple equating condition [or their inverting counterparts])
+```.NT. X``` - ```! ( x )``` (where ```X``` is a simple or simple equating condition)
 
 ## Notes on Operators
 An expression may only contain __one__ operator - for example ```X AND Y``` <br/>
