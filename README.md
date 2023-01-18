@@ -92,7 +92,7 @@ The ```A AND B``` operator __is not__ a bitwise ```AND```, and rather, simply me
 
 ## Notes on Operators
 An expression may only contain __one__ operator. The Assignment operator ```X IS Y``` does __not__ count. <br/>
-A condition may only contain __three or fewer__ operators. There are five types of contitions, as listed below:  <br/>
+A condition may only be of one of the five types listed below:
 Simple condition - for example ```X .LT. Y``` <br/>
 Simple equating condition - for example ```X TIMES Y .EQ. Z``` <br/>
 Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
