@@ -124,7 +124,7 @@ A programme using a tape is as follows:
        END PROGRAMME
 ```
 
-A tape is a data structure, essentially a two-dimensional array. <br/>
+A tape is a data structure, essentially a one-dimensional array. <br/>
 The ```TAPE X OF Y CALLED Z``` statement declares a tape of length ```X``` (```X``` is an integer literal), with elements of type ```Y``` (```Y``` is a type prefix), and of name ```Z```. <br/>
  <br/>
  The tape *head* is an integer variable that contains the location on the tape that will be written to and read from. <br/>
