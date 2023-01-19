@@ -96,8 +96,8 @@ An expression may only contain __one__ operator - for example ```X AND Y``` <br/
 A condition may only be of one of the five types listed below:  <br/>
 Simple condition - for example ```X .LT. Y``` <br/>
 Simple equating condition - for example ```X TIMES Y .EQ. Z``` <br/>
-Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```not(x > y)``` <br/>
-Inverted simple equating condition - for example ```.NT. Y FROM X .EQ. Z``` (equal to C ```not(x - y == z)``` <br/>
+Inverted simple condition - for example ```.NT. X .GT. Y``` (equal to C ```!(x > y)``` <br/>
+Inverted simple equating condition - for example ```.NT. Y FROM X .EQ. Z``` (equal to C ```!(x - y == z)``` <br/>
 Gated condition - for example ```X .GT. Y .OR. X .EQ. Y``` (equal to C ```x > y || x == y``` <br/>
 
 ## Tapes
